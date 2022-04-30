@@ -74,6 +74,14 @@
     "overrides": [
         {
             "files": [
+                "*.html"
+            ],
+            "rules": {
+                "vue/comment-directive": "off"
+            }
+        },
+        {
+            "files": [
               "*.vue"
             ],
             "rules": {
