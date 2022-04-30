@@ -1,7 +1,3 @@
-# Vue 3 + Vite
+# Vue 3 Starter
 
-This template should help get you started developing with Vue 3 in Vite. 
-
-- Vue Router
-- Linter
-- Postcss
+This template should help get you started developing with Vue 3 in Vite.

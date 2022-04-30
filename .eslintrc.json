@@ -1,0 +1,92 @@
+{
+    "root": true,
+    "extends": [
+        "eslint:recommended",
+        "plugin:vue/vue3-recommended"
+    ],
+    "env": {
+        "browser": true,
+        "node": true,
+        "vue/setup-compiler-macros": true
+    },
+    "rules": {
+        "vue/multi-word-component-names": "off",
+        "vue/require-default-prop": "off",
+        "template-curly-spacing": [
+            "off"
+        ],
+        "indent": [
+            "error",
+            4
+        ],
+        "semi": [
+            "error",
+            "never"
+        ],
+        "vue/singleline-html-element-content-newline": [
+            "error",
+            {
+                "ignoreWhenNoAttributes": true,
+                "ignoreWhenEmpty": true,
+                "ignores": [
+                    "router-link"
+                ]
+            }
+        ],
+        "vue/html-indent": [
+            "error",
+            4,
+            {
+                "attribute": 1,
+                "baseIndent": 1,
+                "closeBracket": 0,
+                "alignAttributesVertically": true
+            }
+        ],
+        "vue/script-indent": [
+            "error",
+            4,
+            {
+                "baseIndent": 1
+            }
+        ],
+        "vue/html-self-closing": [
+            "error",
+            {
+                "html": {
+                    "void": "never",
+                    "normal": "any",
+                    "component": "always"
+                }
+            }
+        ],
+        "vue/max-attributes-per-line": [
+            "error",
+            {
+                "singleline": 4,
+                "multiline": {
+                    "max": 1
+                }
+            }
+        ],
+        "vue/no-v-html": "off"
+    },
+    "overrides": [
+        {
+            "files": [
+              "*.vue"
+            ],
+            "rules": {
+              "indent": "off"
+            }
+          },
+        {
+            "files": [
+                "cypress/integration/**.spec.{js,ts,jsx,tsx}"
+            ],
+            "extends": [
+                "plugin:cypress/recommended"
+            ]
+        }
+    ]
+}

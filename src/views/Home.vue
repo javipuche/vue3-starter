@@ -1,7 +1,7 @@
 <template>
-    <Home />
+    <PageHome />
 </template>
 
 <script setup>
-    import Home from '@/components/Pages/Home.vue'
+    import PageHome from '@ui/Pages/Home.vue'
 </script>

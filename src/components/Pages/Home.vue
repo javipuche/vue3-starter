@@ -1,9 +1,9 @@
 <template>
     <LayoutDefault>
-        Home
+        {{ $t('hello') }}
     </LayoutDefault>
 </template>
 
 <script setup>
-    import LayoutDefault from '@/components/Layouts/Default.vue'
+    import LayoutDefault from '@ui/Layouts/Default.vue'
 </script>

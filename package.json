@@ -1,159 +1,37 @@
 {
-  "name": "my-vue-app",
-  "private": true,
+  "name": "vue3-starter",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "npm run build && vite preview --port 5050",
+    "test:unit": "vitest --environment jsdom",
+    "test:e2e": "start-server-and-test preview http://127.0.0.1:5050/ 'cypress open'",
+    "test:e2e:ci": "start-server-and-test preview http://127.0.0.1:5050/ 'cypress run'",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
   },
   "dependencies": {
-    "vue": "^3.2.31",
-    "vue-router": "^4.0.13"
+    "axios": "^0.27.2",
+    "pinia": "^2.0.13",
+    "pinia-plugin-persistedstate": "^1.5.1",
+    "vue": "^3.2.33",
+    "vue-i18n": "^9.1.9",
+    "vue-router": "^4.0.14"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^2.2.4",
-    "cssnano": "^5.1.0",
-    "eslint-plugin-vue": "^8.5.0",
-    "postcss-functions": "^4.0.2",
-    "postcss-html": "^1.3.0",
-    "postcss-import": "^14.0.2",
-    "postcss-nested": "^5.0.6",
-    "postcss-preset-env": "^7.4.2",
-    "standard": "^16.0.4",
-    "stylelint": "^14.5.3",
-    "stylelint-config-recommended-vue": "^1.3.0",
-    "stylelint-config-standard": "^25.0.0",
-    "vite": "^2.8.6"
-  },
-  "eslintConfig": {
-    "env": {
-      "browser": true,
-      "node": true,
-      "vue/setup-compiler-macros": true
-    },
-    "extends": [
-      "eslint:recommended",
-      "plugin:vue/vue3-recommended"
-    ],
-    "rules": {
-      "vue/multi-word-component-names": "off",
-      "vue/require-default-prop": "off",
-      "template-curly-spacing": [
-        "off"
-      ],
-      "indent": [
-        "error",
-        4
-      ],
-      "semi": [
-        "error",
-        "never"
-      ],
-      "vue/singleline-html-element-content-newline": [
-        "error",
-        {
-          "ignoreWhenNoAttributes": true,
-          "ignoreWhenEmpty": true,
-          "ignores": [
-            "router-link"
-          ]
-        }
-      ],
-      "vue/html-indent": [
-        "error",
-        4,
-        {
-          "attribute": 1,
-          "baseIndent": 1,
-          "closeBracket": 0,
-          "alignAttributesVertically": true
-        }
-      ],
-      "vue/script-indent": [
-        "error",
-        4,
-        {
-          "baseIndent": 1
-        }
-      ],
-      "vue/html-self-closing": [
-        "error",
-        {
-          "html": {
-            "void": "never",
-            "normal": "any",
-            "component": "always"
-          }
-        }
-      ],
-      "vue/max-attributes-per-line": [
-        "error",
-        {
-          "singleline": 4,
-          "multiline": {
-            "max": 1
-          }
-        }
-      ],
-      "vue/no-v-html": "off"
-    },
-    "overrides": [
-      {
-        "files": [
-          "*.vue"
-        ],
-        "rules": {
-          "indent": "off"
-        }
-      }
-    ]
-  },
-  "stylelint": {
-    "customSyntax": "postcss-html",
-    "env": {
-      "browser": true,
-      "node": true
-    },
-    "extends": [
-      "stylelint-config-standard",
-      "stylelint-config-recommended-vue"
-    ],
-    "ignoreFiles": [
-      "**/*.js"
-    ],
-    "overrides": [
-      {
-        "files": [
-          "*.vue",
-          "**/*.vue"
-        ],
-        "rules": {
-          "at-rule-no-unknown": [
-            true,
-            {
-              "ignoreAtRules": [
-                "at-root"
-              ]
-            }
-          ],
-          "no-descending-specificity": null,
-          "indentation": [
-            2,
-            {
-              "baseIndentLevel": 1
-            }
-          ],
-          "length-zero-no-unit": [
-            true,
-            {
-              "ignore": [
-                "custom-properties"
-              ]
-            }
-          ]
-        }
-      }
-    ]
+    "@testing-library/vue": "^6.5.1",
+    "@vitejs/plugin-vue": "^2.3.1",
+    "cypress": "^9.6.0",
+    "eslint": "^8.14.0",
+    "eslint-plugin-cypress": "^2.12.1",
+    "eslint-plugin-vue": "^8.7.1",
+    "jsdom": "^19.0.0",
+    "sass": "^1.51.0",
+    "start-server-and-test": "^1.14.0",
+    "stylelint": "^14.8.0",
+    "stylelint-config-recommended-vue": "^1.4.0",
+    "stylelint-config-standard-scss": "^3.0.0",
+    "vite": "^2.9.6",
+    "vitest": "^0.10.0"
   }
 }
