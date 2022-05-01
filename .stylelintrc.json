@@ -1,5 +1,4 @@
 {
-    "customSyntax": "postcss-html",
     "env": {
         "browser": true,
         "node": true
@@ -9,10 +8,12 @@
         "stylelint-config-recommended-vue/scss"
     ],
     "ignoreFiles": [
-        "**/*.js"
+        "**/*.js",
+        "**/*.md"
     ],
     "overrides": [
         {
+            "customSyntax": "postcss-html",
             "files": [
                 "*.vue",
                 "**/*.vue"
