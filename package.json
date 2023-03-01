@@ -30,6 +30,7 @@
     "jsdom": "^19.0.0",
     "postcss-functions": "^4.0.2",
     "postcss-html": "^1.4.1",
+    "postcss-preset-env": "^7.4.4",
     "sass": "^1.51.0",
     "start-server-and-test": "^1.14.0",
     "stylelint": "^14.8.0",

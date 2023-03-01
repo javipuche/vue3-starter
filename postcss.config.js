@@ -1,6 +1,13 @@
 module.exports = () => ({
     plugins: {
         autoprefixer: {},
+        'postcss-preset-env': {
+            stage: 0,
+            features: {
+                'custom-properties': false,
+                'nesting-rules': false
+            }
+        },
         'postcss-functions': {
             functions: {
                 em: function (value, base = 16) {
