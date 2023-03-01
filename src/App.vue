@@ -1,7 +1,7 @@
 <template>
-    <Router />
+  <Router />
 </template>
 
 <script setup>
-    import Router from '@/views/Router.vue'
+  import Router from '@/views/Router.vue'
 </script>

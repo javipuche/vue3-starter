@@ -1,9 +1,9 @@
 <template>
-    <LayoutDefault>
-        {{ $t('hello') }}
-    </LayoutDefault>
+  <LayoutDefault>
+    {{ $t('hello') }}
+  </LayoutDefault>
 </template>
 
 <script setup>
-    import LayoutDefault from '@ui/Layouts/Default.vue'
+  import LayoutDefault from '@ui/Layouts/Default.vue'
 </script>

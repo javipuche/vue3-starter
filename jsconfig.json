@@ -1,11 +1,11 @@
 {
-    "compilerOptions": {
-      "baseUrl": ".",
-      "paths": {
-        "@/*": ["./src/*"],
-        "@ui/*": ["./src/components/*"],
-      },
-      "jsx": "preserve"
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@ui/*": ["./src/components/*"]
     },
-    "exclude": ["node_modules", "dist"]
-  }
+    "jsx": "preserve"
+  },
+  "exclude": ["node_modules", "dist"]
+}

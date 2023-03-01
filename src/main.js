@@ -7,9 +7,9 @@ import router from '@/router'
 import locales from '@/locales'
 
 const i18n = createI18n({
-    locale: navigator.language.split('-')[0],
-    fallbackLocale: 'es',
-    messages: locales,
+  locale: navigator.language.split('-')[0],
+  fallbackLocale: 'es',
+  messages: locales
 })
 
 const app = createApp(App)
