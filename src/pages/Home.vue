@@ -1,14 +1,12 @@
 <template>
-  <LayoutDefault>
-    <RouterView />
-  </LayoutDefault>
+  <Home />
 </template>
 
 <script setup>
-  import LayoutDefault from '@/layouts/Default.vue'
+  import Home from '@/components/Home.vue'
   import { useHead } from 'unhead'
 
   useHead({
-    title: 'Hello'
+    title: 'Home'
   })
 </script>
